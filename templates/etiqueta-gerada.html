@@ -1,0 +1,40 @@
+<!--
+  ASSUNTO: Etiqueta {{numero}} gerada: {{cod_material}} | {{nome}}
+-->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Etiqueta {{numero}} gerada</title>
+</head>
+<body style="margin:0;padding:0;background:#F2F2F2;font-family:'Segoe UI',Arial,sans-serif;color:#404040;">
+<span style="display:none;max-height:0;overflow:hidden;opacity:0;">Material enviado para {{destino}}. Sinalize o recebimento no #GIRO.</span>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#F2F2F2;padding:24px 12px;">
+<tr><td align="center">
+  <table role="presentation" width="600" cellpadding="0" cellspacing="0" style="max-width:600px;width:100%;background:#FFFFFF;border-radius:8px;overflow:hidden;">
+    <tr><td style="background:#345B87;padding:16px 24px;">
+      <img src="{{site_url}}/assets/logo_giro.png" height="36" alt="giro" style="display:block;background:#FFFFFF;border-radius:6px;padding:4px 8px;">
+    </td></tr>
+    <tr><td style="padding:28px 24px 8px 24px;">
+      <h1 style="margin:0 0 12px 0;font-size:20px;line-height:26px;color:#345B87;">Etiqueta {{numero}} gerada</h1>
+      <p style="margin:0 0 12px 0;font-size:14px;line-height:21px;">Uma nova etiqueta digital foi gerada e o material foi enviado para <b>{{destino}}</b>. O recebimento deve ser sinalizado no sistema.</p>
+      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin:8px 0 4px 0;border:1px solid #E5E5E5;border-radius:6px;"><tr><td style="padding:6px 10px;font-size:13px;color:#7F7F7F;width:38%;border-bottom:1px solid #E5E5E5;">Etiqueta</td><td style="padding:6px 10px;font-size:13px;color:#404040;border-bottom:1px solid #E5E5E5;"><b>{{numero}}</b></td></tr><tr><td style="padding:6px 10px;font-size:13px;color:#7F7F7F;width:38%;border-bottom:1px solid #E5E5E5;">Código do material</td><td style="padding:6px 10px;font-size:13px;color:#404040;border-bottom:1px solid #E5E5E5;"><b>{{cod_material}}</b></td></tr><tr><td style="padding:6px 10px;font-size:13px;color:#7F7F7F;width:38%;border-bottom:1px solid #E5E5E5;">Componente</td><td style="padding:6px 10px;font-size:13px;color:#404040;border-bottom:1px solid #E5E5E5;"><b>{{nome}}</b></td></tr><tr><td style="padding:6px 10px;font-size:13px;color:#7F7F7F;width:38%;border-bottom:1px solid #E5E5E5;">Quantidade</td><td style="padding:6px 10px;font-size:13px;color:#404040;border-bottom:1px solid #E5E5E5;"><b>{{qtde}} {{unidade}}</b></td></tr><tr><td style="padding:6px 10px;font-size:13px;color:#7F7F7F;width:38%;border-bottom:1px solid #E5E5E5;">Nº de série</td><td style="padding:6px 10px;font-size:13px;color:#404040;border-bottom:1px solid #E5E5E5;"><b>{{serie}}</b></td></tr><tr><td style="padding:6px 10px;font-size:13px;color:#7F7F7F;width:38%;border-bottom:1px solid #E5E5E5;">Origem → Destino</td><td style="padding:6px 10px;font-size:13px;color:#404040;border-bottom:1px solid #E5E5E5;"><b>{{origem}} → {{destino}}</b></td></tr><tr><td style="padding:6px 10px;font-size:13px;color:#7F7F7F;width:38%;border-bottom:1px solid #E5E5E5;">Causa da remoção</td><td style="padding:6px 10px;font-size:13px;color:#404040;border-bottom:1px solid #E5E5E5;"><b>{{causa}}</b></td></tr><tr><td style="padding:6px 10px;font-size:13px;color:#7F7F7F;width:38%;border-bottom:1px solid #E5E5E5;">Falha aberta / Nº</td><td style="padding:6px 10px;font-size:13px;color:#404040;border-bottom:1px solid #E5E5E5;"><b>{{falha_aberta}} / {{num_falha}}</b></td></tr><tr><td style="padding:6px 10px;font-size:13px;color:#7F7F7F;width:38%;border-bottom:1px solid #E5E5E5;">Responsável</td><td style="padding:6px 10px;font-size:13px;color:#404040;border-bottom:1px solid #E5E5E5;"><b>{{responsavel}}</b></td></tr><tr><td style="padding:6px 10px;font-size:13px;color:#7F7F7F;width:38%;border-bottom:1px solid #E5E5E5;">Data</td><td style="padding:6px 10px;font-size:13px;color:#404040;border-bottom:1px solid #E5E5E5;"><b>{{data}}</b></td></tr></table>
+    </td></tr>
+    <tr><td align="center" style="padding:16px 24px 28px 24px;">
+      <table role="presentation" cellpadding="0" cellspacing="0"><tr>
+        <td style="background:#345B87;border-radius:6px;">
+          <a href="{{link}}" style="display:inline-block;padding:12px 28px;font-size:15px;font-weight:600;color:#FFFFFF;text-decoration:none;">Abrir movimentação e etiqueta</a>
+        </td>
+      </tr></table>
+      <p style="margin:16px 0 0 0;font-size:12px;line-height:18px;color:#7F7F7F;">Se o botão não funcionar, copie e cole este endereço no navegador:<br>
+        <a href="{{link}}" style="color:#345B87;word-break:break-all;">{{link}}</a></p>
+    </td></tr>
+    <tr><td style="background:#F2F2F2;padding:14px 24px;font-size:11px;line-height:16px;color:#7F7F7F;text-align:center;">
+      Mensagem automática do #GIRO | Controle de Movimentações dos Equipamentos de Giro. Não responda a este e-mail.
+    </td></tr>
+  </table>
+</td></tr>
+</table>
+</body>
+</html>

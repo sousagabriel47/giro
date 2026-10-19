@@ -1,0 +1,8 @@
+/* #GIRO | identidade visual: azul #345B87, fundo #F2F2F2 */
+:root{--bs-primary:#345B87;--bs-primary-rgb:52,91,135;--bs-body-bg:#F2F2F2;--bs-link-color:#345B87}
+.btn-primary{--bs-btn-bg:#345B87;--bs-btn-border-color:#345B87;--bs-btn-hover-bg:#264566;--bs-btn-hover-border-color:#264566;--bs-btn-active-bg:#1f3a56}
+.text-bg-primary{background-color:#345B87!important}
+.navbar{background:#345B87}
+.card{border:0;box-shadow:0 1px 3px rgba(0,0,0,.15)}
+.table thead th{background:#345B87;color:#fff;font-weight:600}
+.logo-pill{background:#fff;border-radius:6px;padding:3px 8px}

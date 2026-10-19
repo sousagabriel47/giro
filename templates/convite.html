@@ -1,0 +1,42 @@
+<!--
+  ASSUNTO: Você foi convidado para o #GIRO
+-->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Você foi convidado para o #GIRO</title>
+</head>
+<body style="margin:0;padding:0;background:#F2F2F2;font-family:'Segoe UI',Arial,sans-serif;color:#404040;">
+<span style="display:none;max-height:0;overflow:hidden;opacity:0;">Aceite o convite e crie sua senha para acessar o #GIRO.</span>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#F2F2F2;padding:24px 12px;">
+<tr><td align="center">
+  <table role="presentation" width="600" cellpadding="0" cellspacing="0" style="max-width:600px;width:100%;background:#FFFFFF;border-radius:8px;overflow:hidden;">
+    <tr><td style="background:#345B87;padding:16px 24px;">
+      <img src="{{ .SiteURL }}/assets/logo_giro.png" height="36" alt="giro" style="display:block;background:#FFFFFF;border-radius:6px;padding:4px 8px;">
+    </td></tr>
+    <tr><td style="padding:28px 24px 8px 24px;">
+      <h1 style="margin:0 0 12px 0;font-size:20px;line-height:26px;color:#345B87;">Você foi convidado para o #GIRO</h1>
+      <p style="margin:0 0 12px 0;font-size:14px;line-height:21px;">Olá,</p>
+      <p style="margin:0 0 12px 0;font-size:14px;line-height:21px;">Você recebeu acesso ao <b>#GIRO</b>, sistema de controle e rastreabilidade da movimentação de equipamentos e materiais de giro.</p>
+      <p style="margin:0 0 12px 0;font-size:14px;line-height:21px;">Clique no botão abaixo para aceitar o convite e criar sua senha. O acesso será feito com o e-mail <b>{{ .Email }}</b>.</p>
+    </td></tr>
+    <tr><td align="center" style="padding:16px 24px 28px 24px;">
+      <table role="presentation" cellpadding="0" cellspacing="0"><tr>
+        <td style="background:#345B87;border-radius:6px;">
+          <a href="{{ .ConfirmationURL }}" style="display:inline-block;padding:12px 28px;font-size:15px;font-weight:600;color:#FFFFFF;text-decoration:none;">Aceitar convite e criar senha</a>
+        </td>
+      </tr></table>
+      <p style="margin:16px 0 0 0;font-size:12px;line-height:18px;color:#7F7F7F;">Se o botão não funcionar, copie e cole este endereço no navegador:<br>
+        <a href="{{ .ConfirmationURL }}" style="color:#345B87;word-break:break-all;">{{ .ConfirmationURL }}</a></p>
+      <p style="margin:12px 0 0 0;font-size:12px;line-height:18px;color:#7F7F7F;">Este link é pessoal e tem validade limitada. Se você não esperava este convite, ignore esta mensagem.</p>
+    </td></tr>
+    <tr><td style="background:#F2F2F2;padding:14px 24px;font-size:11px;line-height:16px;color:#7F7F7F;text-align:center;">
+      Mensagem automática do #GIRO | Controle de Movimentações dos Equipamentos de Giro. Não responda a este e-mail.
+    </td></tr>
+  </table>
+</td></tr>
+</table>
+</body>
+</html>
